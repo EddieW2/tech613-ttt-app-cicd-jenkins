@@ -18,7 +18,4 @@ The server is built on Node's built-in http module (no Express), with structured
 **MongoDB** (optional, only for the persistent mode)
 
 test webhook is working on main branch
-<<<<<<< HEAD
-test dev 2.7
-=======
->>>>>>> origin/main
+dev 2.7
