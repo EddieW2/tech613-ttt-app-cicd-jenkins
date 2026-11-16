@@ -1142,14 +1142,6 @@ function createServer({ port = 3000, logger, metrics } = {}) {
 						<p class="mode-pill">Mode: ${mode.modeLabel}</p>
 						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)}</p>
 						<script src="/app.js"></script>
-						<p id="datetime" class="version-stamp"></p>
-						<script>
-							function showDateTime() {
-								document.getElementById('datetime').textContent = new Date().toLocaleString('en-GB');
-							}
-							showDateTime();
-							setInterval(showDateTime, 1000);
-						</script>
 					</body>
 				</html>
 			`);
