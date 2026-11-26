@@ -97,7 +97,7 @@ function getMongoFallbackMessage(reason) {
 }
 
 function getFooterVersionStamp() {
-	const configuredTimestamp = String(process.env.APP_FOOTER_TIMESTAMP || '').trim();
+	const configuredTimestamp = String(process.env.APP_FOOTER_TIMESTAMP || '10:40').trim();
 	return configuredTimestamp ? `${APP_VERSION} ${configuredTimestamp}` : APP_VERSION;
 }
 
@@ -1142,6 +1142,7 @@ function createServer({ port = 3000, logger, metrics } = {}) {
 						<p class="mode-pill">Mode: ${mode.modeLabel}</p>
 						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)}</p>
 						<script src="/app.js"></script>
+						
 					</body>
 				</html>
 			`);
